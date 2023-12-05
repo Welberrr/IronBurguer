@@ -15,55 +15,25 @@
 }
 
 body{
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(to right, black, rgb(36, 35, 35), rgb(36, 34, 34));
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-header{
-    background-color: gray;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+  width: 50%;
+  margin: 0 auto;
+  background: radial-gradient(circle, black, rgb(71, 69, 69), gray);
+  text-align: center;
+  background-color: rgb(77, 75, 75);
 }
 
-.titulo{
-    text-align: center;
-    background-color: rgb(77, 75, 75);
-}
-
-.logo {
-    margin-left: 47%;
-    width: 100px;
-    height: 100px;
-    border-radius: 10%;
-    animation: fadeInFadeOut 2s linear infinite;
-  }
-  
-  @keyframes fadeInFadeOut {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.4;
-    }
-    100% {
-      opacity: 1.5;
-    }
-  }
-  
-  
-
-ul{
-    font-size: 20px;
-    list-style: none;
-    display: flex;
-    margin-left: auto;
-    align-self: flex-end;
-}
-
-ul li{
-    margin-right: 20px; 
-}
 
 .posicao{
     display: flex;
@@ -77,7 +47,7 @@ a {
 
 .Pt1, .Pt2 {
     align-items: center;
-    margin: 60px;
+    margin: 50px;
     height: 300px;
     width: 500px;
     flex: 1;
@@ -113,7 +83,7 @@ p {
 
 h1 {
   font-family: 'Merriweather', serif;
-  color: #000000;
+  color: #ffffff;
   font-size: 35px;
   text-align: center;
 }
@@ -164,33 +134,3 @@ h1 {
     z-index: -1;
     border-radius: 5%;
   }
-
-nav li>a::after{
-  content: "";
-  width: 0%;
-  height: 4px;
-  background-color: rgb(255, 0, 0);
-  position: absolute;
-  bottom: 0;
-  left: 0; 
-  transition: 0.5s ease-in-out;
-}
-
-nav li>a:hover ::after{
-  width: 100%;
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 5px;
-  }
-
-footer img {
-    width: 30px; 
-    height: 15px;
-}
