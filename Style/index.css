@@ -1,0 +1,170 @@
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .logo {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .Pt1, .Pt2 {
+      width: 100%;
+    }
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    background-color: rgb(77, 75, 75);
+}
+
+.logo {
+    margin-left: 47%;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    animation: fadeInFadeOut 2s linear infinite;
+  }
+  
+  @keyframes fadeInFadeOut {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.4;
+    }
+    100% {
+      opacity: 1.5;
+    }
+  }
+  
+  
+
+ul{
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+ul li{
+    margin-right: 20px; 
+}
+
+container{
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Pt1, .Pt2 {
+    align-items: center;
+    margin: 60px;
+    height: 300px;
+    width: 500px;
+    flex: 1;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.Pt1:hover, .Pt2:hover {
+    border-color: white;
+    transform: scale(1.1);
+    transition: transform 2s ease;
+
+}
+
+.Pt1 {
+    position: relative;
+    padding: 50px;
+    border: 4px solid rgb(100, 100, 100);
+    border-radius: 5%;
+  }
+  
+  .Pt1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("https://img.freepik.com/premium-photo/big-burger-h…od-design-logotype-restaurant-cafe_726113-794.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(55%);
+    border-radius: 5%;
+    z-index: -1;
+  }
+  
+
+  .Pt2 {
+    position: relative;
+    padding: 50px;
+    border: 4px solid rgb(100, 100, 100);
+    border-radius: 5%;
+  }
+  
+  .Pt2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("Imagens/_98f78ff4-fef3-4631-8ced-a0a1396b6909.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    z-index: -1;
+    border-radius: 5%;
+  }
+  
+
+
+h1 {
+  color: #ffffff;
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px white;
+    font-family: 'Ubuntu', sans-serif;
+}
+  
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+
+footer img {
+    width: 30px; 
+    height: 15px;
+}
