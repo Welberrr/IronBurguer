@@ -15,7 +15,7 @@
 }
 
 body{
-    background: linear-gradient(to right, black, rgb(36, 35, 35), rgb(36, 34, 34));
+    background-color: black;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -23,15 +23,18 @@ body{
 }
 
 .titulo {
+  text-shadow: 1px 4px gray;
+  font-family: 'Merriweather', serif;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 45%;
   width: 70%;
+  height: 100px;
   margin: 0 auto;
-  background: radial-gradient(circle, black, rgb(71, 69, 69), gray);
+  /* background: radial-gradient(circle, black, rgb(71, 69, 69), gray); */
+  background-image: url("https://i.pinimg.com/736x/59/dc/83/59dc83f6b613158ac3becf1a50f503c9.jpg");
   text-align: center;
-  background-color: rgb(77, 75, 75);
 }
 
 hr{
@@ -66,10 +69,12 @@ hr{
 
 .slide img{
   width: 800px;
+  height: 400px;
 }
 
 .first img{
   width: 800px;
+  height: 400px;
   align-items: center;
 }
 
@@ -113,10 +118,6 @@ hr{
   margin-left: -75%;
 }
 
-#radio5:checked ~ .first{
-  margin-left: -100%;
-}
-
 #radio1:checked ~ .navigation-auto .auto-btn1{
   background-color: white;
 }
@@ -133,11 +134,10 @@ hr{
   background-color: white;
 }
 
-#radio5:checked ~ .navigation-auto .auto-btn5{
-  background-color: white;
-}
-
 .posicao{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-image: url("https://i.pinimg.com/736x/59/dc/83/59dc83f6b613158ac3becf1a50f503c9.jpg");
     display: flex;
     justify-content: space-between;
 }
@@ -158,29 +158,55 @@ a {
 }
 
 .Pt1:hover, .Pt2:hover {
-    filter: opacity(70%);
     border-color: white;
     transform: scale(1.1);
     transition: 0.8s ease;
 }
 
-.Pt1:hover p {
-  font-size: 35px;
+.Pt1:hover p{
+  border: solid white;
+  transform: translate(556px, -100px);
+  transition: 2s;
+  background-color: rgb(17, 16, 16);
 }
 
 .Pt2:hover p{
-  font-size: 33px;
+  border: solid white;
+  transform: translate(-556px, -100px);
+  transition: 2s;
+  background-color: rgb(17, 16, 16);
 }
 
-.Pt1:hover h1,
+.Pt1:hover h1 {
+  text-shadow: 1px 5px gray;
+  border: solid white;
+  background-image: url("https://img.freepik.com/fotos-premium/textura-de-grade-de-alto-falante_30478-3606.jpg?w=360");
+  transform: translate(0, 100px);
+  transition: 2s;
+  font-size: 50px;
+}
+
 .Pt2:hover h1 {
-  font-size: 40px;
+  text-shadow: 1px 5px gray;
+  border: solid white;
+  background-image: url("https://img.freepik.com/fotos-premium/textura-de-grade-de-alto-falante_30478-3606.jpg?w=360");
+  transform: translate(0, 100px);
+  transition: 2s;
+  font-size: 41px;
 }
 
-p {
-  font-size: 30px;
+.Pt1 p, .Pt2 p {
+  border-radius: 20%;
+  background-color: rgba(128, 128, 128, 0.6);
+  font-size: 40px;
   color: rgb(255, 255, 255);
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Merriweather', serif;
+}
+
+.Pt1 h1, .Pt2 h1{
+  font-family: 'Merriweather', serif;
+  background-color: rgba(128, 128, 128, 0.6);
+  border-radius: 25%;
 }
 
 h1 {
@@ -191,48 +217,23 @@ h1 {
 }
 
 .Pt1 {
+    background-image: url("https://img.freepik.com/premium-photo/big-burger-h…od-design-logotype-restaurant-cafe_726113-794.jpg");
     position: relative;
     padding: 50px;
     border: 4px solid rgb(100, 100, 100);
     border-radius: 5%;
   }
-  
-  .Pt1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("https://img.freepik.com/premium-photo/big-burger-h…od-design-logotype-restaurant-cafe_726113-794.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: opacity(70%);
-    border-radius: 5%;
-    z-index: -1;
-  }
-  
 
   .Pt2 {
+    background-image: url("https://img.freepik.com/fotos-premium/particulas-c…so-hamburguer-de-carne-com-explosao_818304-22.jpg");
     position: relative;
     padding: 50px;
     border: 4px solid rgb(100, 100, 100);
     border-radius: 5%;
   }
-  
-  .Pt2::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-image: url("Imagens/_98f78ff4-fef3-4631-8ced-a0a1396b6909.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    filter: brightness(50%);
-    z-index: -1;
-    border-radius: 5%;
+
+  .cardapio{
+    background-image: url("https://i.pinimg.com/originals/c9/4a/ff/c94affe6bcb9fbf7d3508ba98977a1d1.jpg");
+    width: 100%;
+    height: 1500px;
   }

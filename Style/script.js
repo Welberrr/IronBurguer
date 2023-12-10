@@ -1,16 +1,19 @@
-let count = 1;
-document.getElementById("radio1").checked = true;
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const radioButtons = document.querySelectorAll('[name="radio-btn"]');
 
-setInterval (function({}){
-    nextImage();
-}, 5000)
-
-function nextImage(){
-    count++;
-    if(count>5){
-        count = 1;
-    }
-
-    document.getElementById("radio+count").checked = true;
-
+function showSlide(index) {
+  slides.forEach(slide => slide.style.display = 'none');
+  slides[index].style.display = 'block';
 }
+
+function nextSlide() {
+  slideIndex = (slideIndex + 1) % slides.length;
+  showSlide(slideIndex);
+}
+
+function startSlider() {
+  setInterval(nextSlide, 5000);
+}
+
+startSlider();
