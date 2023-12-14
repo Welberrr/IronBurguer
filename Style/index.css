@@ -15,7 +15,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: rgb(54, 52, 52);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -29,10 +29,9 @@ body{
   align-items: center;
   justify-content: center;
   border-radius: 45%;
-  width: 70%;
+  width: 65%;
   height: 100px;
   margin: 0 auto;
-  /* background: radial-gradient(circle, black, rgb(71, 69, 69), gray); */
   background-image: url("https://i.pinimg.com/736x/59/dc/83/59dc83f6b613158ac3becf1a50f503c9.jpg");
   text-align: center;
 }
@@ -232,8 +231,36 @@ h1 {
     border-radius: 5%;
   }
 
-  .cardapio{
+  .cardapioPosicao{
     background-image: url("https://i.pinimg.com/originals/c9/4a/ff/c94affe6bcb9fbf7d3508ba98977a1d1.jpg");
     width: 100%;
-    height: 1500px;
+    height: 1100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tituloCard{
+    text-shadow: 1px 4px gray;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 45%;
+    width: 65%;
+    height: 100px;
+    background-image: url("https://i.pinimg.com/736x/59/dc/83/59dc83f6b613158ac3becf1a50f503c9.jpg");
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cardapioPt1, .cardapioPt2{
+    
+  }
+
+  .h1, .h2, .h3, .h4{
+    border: solid 5px white;
+    margin: 20px;
+    height: 300px;
+    width: 500px;
   }
